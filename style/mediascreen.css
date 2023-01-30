@@ -67,7 +67,8 @@
         gap: 20vh;
     }
     .header__navbar {
-        justify-content: center;
+
+        justify-content: flex-end;
         gap: 40px;
     }
     .defaultPadding {

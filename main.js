@@ -44,6 +44,9 @@ function openBurgerMenu() {
 // Открытие и закрытие меню поиска
 
 searchIcon.addEventListener('click', () => {
+    if (mobileMenu.classList.value === 'mobileMenu mobileMenu_isOpened') {
+        return
+    }
     openSearchMenu();
 });
 findProductBtn.addEventListener('click', () => {

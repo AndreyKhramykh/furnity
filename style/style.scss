@@ -57,17 +57,17 @@ body {
 }
 
 .mobileMenu {
-    display: none;
     top: 0;
     position: fixed;
     width: 200px;
-    background-color: rgb(214, 222, 226, 0.8);
+    background-color: rgb(214, 222, 226, 0.9);
     transform: translateX(-100%);
     transition-duration: 1s;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px 0px;
     z-index: 98;
+    font-size: 24px;
 
 
     &_isOpened {
@@ -78,7 +78,6 @@ body {
 
     &__content {
         position: relative;
-
    
     }
 
@@ -132,9 +131,10 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         gap: 20px;
         color: var(--black);
+        padding-left: 10px;
     }
 }
 
@@ -341,7 +341,9 @@ body {
             }
         }
         &-txt {
-            font-size: var(--18px);
+            font-size: 22px;
+            font-weight: 500;
+            text-shadow:1px 1px 2px var(--orange) ;
             text-align: center;
         }
         &-button {
