@@ -1,0 +1,112 @@
+@media screen and (max-width:1024px) {
+
+    :root {
+        --restInputHeight: 10vh;
+        --48px: 38px;
+    }
+    .basketMenu {
+        width: 30vh;
+    }
+    .infoBlock__element-img {
+        display: grid;
+        place-items: center;
+    }
+    .infoBlock__element-img > img {
+        width: 400px;
+        height: 500px;
+    }
+    .reviewsBlock__element_img > img {
+        width: 400px;
+        height: 400px;
+    }
+    .header__navbar_menu,
+    .infoBlock__element.infoBlock__element_img,
+    .reviewsBlock__element_img {
+        display: none;
+    }
+    .mobileMenu {
+        display: block;
+    }
+    .infoBlock {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__element_w40 {
+        width: auto;
+    }
+   
+}
+
+@media screen and (max-width:768px) {
+    .mainContent__textBlock-menu {
+        display: none;
+    }
+    .infoBlock__element_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .mainContent__cardsBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+    .contactUsBlock {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .footer__element_w40 {
+        flex-direction: column;
+    }
+    .header {
+        gap: 20vh;
+    }
+    .header__navbar {
+        justify-content: center;
+        gap: 40px;
+    }
+    .defaultPadding {
+        padding: 0px 20px 0px 20px;
+    }
+    :root{
+        --48px:30px;
+    }
+    .infoBlock__element_grid {
+        padding: 40px 0px;
+    }
+    .reviewsBlock__element_txt,
+    .contactUsBlock,
+    .footer {
+        padding: 20px 0px;
+    }
+    .footer > div:nth-child(1) {
+        width: 100%;
+        justify-content: center;
+    }
+    :root {
+        --36px: 24px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header {
+        min-height: 60vh;
+        gap: 10vh;
+    }
+    .header__navbar_symbols {
+        width: 30%;
+    }
+    .header__content {
+        padding: 20px 0px;
+    }
+    :root {
+        --48px: 26px;
+        --36px: 18px;
+    }
+}
+
